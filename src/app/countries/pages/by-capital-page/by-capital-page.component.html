@@ -5,7 +5,8 @@
   <div class="col">
     <!-- Serarch Box -->
     <shared-serch-box
-    (onValue)="searchByCapital($event)"
+    (onDebounce)="searchByCapital($event)"
+    [initialValue]="initialValue"
     placeholder="Buscar por capital" ></shared-serch-box>
   </div>
 </div>
@@ -14,7 +15,7 @@
   <div class="col">
     <!-- Tabla de resultados -->
     <hr>
-
+    <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
     <countries-table [countries]="countries"></countries-table>
   </div>
 </div>

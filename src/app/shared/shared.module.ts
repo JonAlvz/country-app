@@ -6,6 +6,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { SerchBoxComponent } from './components/serch-box/serch-box.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SerchBoxComponent } from './components/serch-box/serch-box.component';
     SidebarComponent,
     ContactPageComponent,
     SerchBoxComponent,
+    LoadingSpinnerComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -22,6 +24,7 @@ import { SerchBoxComponent } from './components/serch-box/serch-box.component';
     SidebarComponent,
     ContactPageComponent,
     SerchBoxComponent,
+    LoadingSpinnerComponent,
   ],
 })
 export class SharedModule {}
